@@ -45,6 +45,4 @@ class GuardrailsValidator:
         if len(response) < 10:
             return False, "Response too brief for educational content."
         
-        # Removed step-by-step format enforcement here.
-        
         return True, "Valid response"
