@@ -240,23 +240,3 @@ class WebSearchAgent:
             solution_content += f"Content: {content}\n\n"
 
         return solution_content
-
-
-# Example usage
-# if __name__ == "__main__":
-#     # Initialize the search agent
-#     # Replace with your actual API keys
-#     agent = WebSearchAgent(
-#         perplexity_api_key="your_perplexity_key_here",
-#         tavily_api_key="your_tavily_key_here"
-#     )
-    
-#     # Test search
-#     query = "quadratic formula derivation"
-#     result = agent.search_math_solution(query)
-    
-#     if result["success"]:
-#         print("Search Results:")
-#         print(agent.extract_solution_content(result["results"], result["source"]))
-#     else:
-#         print(f"Search failed: {result['error']}")
