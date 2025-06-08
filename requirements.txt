@@ -1,0 +1,12 @@
+streamlit
+langchain
+langchain-community
+langchain-openai
+qdrant-client
+sentence-transformers
+requests
+beautifulsoup4
+python-dotenv
+pydantic
+tavily-python
+langchain-anthropic
