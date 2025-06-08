@@ -56,9 +56,6 @@ class SolutionGenerator:
             except Exception as e:
                 print(f"❌ Perplexity failed: {e}")
         
-        # If Perplexity succeeds, skip other methods to save time
-        # Only try fallbacks if Perplexity fails or isn't available
-        
         # Step 2: Try Tavily search + AI processing (only if Perplexity failed and not in fast mode)
         if self.tavily_token and not self.perplexity_token and not self.fast_mode:
             try:
@@ -563,24 +560,3 @@ Based on the research above, here's how to approach this problem:
 
 *🔍 Solution compiled from {source} research results*
 *💡 For complete numerical solution, please refer to the research sources above*"""
-
-
-# # Test function
-# if __name__ == "__main__":
-#     # Initialize with your API tokens - FAST MODE enabled by default
-#     generator = SolutionGenerator(
-#         perplexity_token="your_perplexity_token",
-#         # tavily_token="your_tavily_token",  # Optional
-#         # hf_token="your_hf_token",  # Optional
-#         fast_mode=True  # Skip slow fallbacks
-#     )
-    
-#     # Test with a sample query
-#     test_query = "The equation of the curve which passes through the point (1, 1) and whose slope is given by 2y/x, is ______."
-    
-#     result = generator.generate_step_by_step_solution(test_query)
-#     print("Generated Solution:")
-#     print(result)
-
-# For maximum speed, use only Perplexity:
-# generator = SolutionGenerator(perplexity_token="your_token", fast_mode=True)
