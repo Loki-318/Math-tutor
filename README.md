@@ -26,6 +26,6 @@ This project implements an **AI-powered math assistant** that intelligently proc
 
 ### **Installation**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Loki-318/Math-tutor.git 
 cd math-routing-agent
 pip install -r requirements.txt
